@@ -74,5 +74,13 @@
         android:onClick="MyButtonOnClick"
         android:text="Button" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="NewActivity"
+        android:layout_gravity="center_horizontal"
+        android:text="Button New Activity" />
+
 
 </LinearLayout>

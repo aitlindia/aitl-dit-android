@@ -1,5 +1,6 @@
 package com.aitl.androidapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -80,4 +81,14 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(getApplicationContext(),"Hi "+name+". Welcome to AITL",Toast.LENGTH_SHORT).show();
     }
+
+    public void NewActivity(View view) {
+        Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+        intent.putExtra("name","Advance Integrated Tech Lan");
+
+        startActivity(intent);
+
+    }
+
+
 }

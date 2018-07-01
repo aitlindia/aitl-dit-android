@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         testViewMessage = (TextView) findViewById(R.id.testViewMessage);
         editTextN1 = (EditText) findViewById(R.id.editTextN1);
         editTextN2 = (EditText) findViewById(R.id.editTextN2);
+
+        Log.d("MainActivity","onCreate Called!...");
 
     }
 
@@ -88,6 +91,37 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
 
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("MainActivity","OnStart Called!...");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("MainActivity","onResume Called!...");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("MainActivity","onPause Called!...");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("MainActivity","onStop Called!...");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("MainActivity","onDestroy Called!...");
     }
 
 

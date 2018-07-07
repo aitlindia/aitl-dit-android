@@ -51,6 +51,10 @@ public class Main2Activity extends AppCompatActivity {
         loadFragment(BlankFragment3.newInstance("8","XYZ"));
     }
 
+    public void FargmentDynamic4(View view) {
+        loadFragment(BlankFragment4.newInstance("8","XYZ"));
+    }
+
     void loadFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -88,6 +92,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onDestroy();
         Log.d("MainActivity2","onDestroy Called!...");
     }
+
 
 
 }

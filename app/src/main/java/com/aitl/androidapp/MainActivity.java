@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }else if(id == R.id.action_about){
+            Toast.makeText(getApplicationContext(),"Item Abou Clicked",Toast.LENGTH_SHORT).show();
+            return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -125,4 +128,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void StartService(View view) {
+
+        Intent myintent = new Intent(MainActivity.this,MyService.class);
+        startService(myintent);
+
+    }
+
+    public void StopService(View view) {
+        Intent myintent = new Intent(MainActivity.this,MyService.class);
+        stopService(myintent);
+
+    }
 }

@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="FramnentStaticOnClick"
-            android:text="Fagment1"
+            android:text="Fag1"
             android:layout_weight=".5"
             tools:ignore="OnClick" />
 
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:onClick="FargmentDynamicOnclick"
             android:layout_weight=".5"
-            android:text="Fagment2" />
+            android:text="Fag2" />
 
         <Button
             android:id="@+id/buttonFragment3"
@@ -48,7 +48,15 @@
             android:layout_height="wrap_content"
             android:onClick="FargmentDynamic3"
             android:layout_weight=".5"
-            android:text="Fagment3" />
+            android:text="Fagm3" />
+
+        <Button
+            android:id="@+id/buttonFragment4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="FargmentDynamic4"
+            android:layout_weight=".5"
+            android:text="Fag4" />
 
     </LinearLayout>
 

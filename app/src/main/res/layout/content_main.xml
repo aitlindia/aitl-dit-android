@@ -83,6 +83,23 @@
         android:text="Button New Activity" />
 
 
+    <Button
+        android:id="@+id/buttonServiceStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="StartService"
+        android:layout_gravity="center_horizontal"
+        android:text="Service Start" />
+
+    <Button
+        android:id="@+id/buttonServiceStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="StopService"
+        android:layout_gravity="center_horizontal"
+        android:text="Service Stop" />
+
+
 
 </LinearLayout>
 

@@ -32,8 +32,9 @@ public class Main2Activity extends AppCompatActivity {
 
         nameTV.setText(name);
         Log.d("MainActivity2","onCreate Called!...");
-    }
 
+
+    }
 
 
     public void FargmentDynamicOnclick(View view) {
@@ -73,6 +74,8 @@ public class Main2Activity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d("MainActivity2","onResume Called!...");
+
+        loadFragment(BlankFragment4.newInstance("8","XYZ"));
     }
 
     @Override

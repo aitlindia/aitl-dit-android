@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }else if(id == R.id.action_about){
-            Toast.makeText(getApplicationContext(),"Item Abou Clicked",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Item About Clicked",Toast.LENGTH_SHORT).show();
             return true;
         }
 
@@ -130,13 +130,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void StartService(View view) {
 
-        Intent myintent = new Intent(MainActivity.this,MyService.class);
+        Intent myintent = new Intent(MainActivity.this,MyService2.class);
         startService(myintent);
 
     }
 
     public void StopService(View view) {
-        Intent myintent = new Intent(MainActivity.this,MyService.class);
+        Intent myintent = new Intent(MainActivity.this,MyService2.class);
         stopService(myintent);
 
     }
